@@ -243,18 +243,6 @@ We applied the specifications one at a time:
 ceph orch apply -i thewahda4_osd.yml
 ```
 
-### Add the OSD on `thewahda5`
-
-``` bash
-ceph orch apply -i thewahda5_osd.yml
-```
-
-### Add the OSD on `thewahda6`
-
-``` bash
-ceph orch apply -i thewahda6_osd.yml
-```
-
 The Orchestrator provisions the matching device and deploys the OSD
 daemon on the host selected in the YAML.
 
@@ -269,6 +257,18 @@ each OSD addition. Recovery can continue in the background.
 
 Apply one specification, verify the new OSD, and then proceed according
 to the senior's deployment procedure.
+
+### Add the OSD on `thewahda5`
+
+``` bash
+ceph orch apply -i thewahda5_osd.yml
+```
+
+### Add the OSD on `thewahda6`
+
+``` bash
+ceph orch apply -i thewahda6_osd.yml
+```
 
 ## 9. Step 6 --- Verify that the new OSD joined
 
